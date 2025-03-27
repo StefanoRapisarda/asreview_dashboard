@@ -7,7 +7,7 @@ from scripts.analyze import visualize_publications_per_year  # if you have analy
 st.title("📊 My Data Dashboard")
 
 # Load data
-@st.cache_data
+@st.cache_data.clear()
 def load_data():
     return pd.read_csv("data/asreview_papers.csv")
 
