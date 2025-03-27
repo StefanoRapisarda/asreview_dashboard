@@ -7,7 +7,7 @@ from scripts.analyze import visualize_publications_per_month  # if you have anal
 st.title("📊 My Data Dashboard")
 
 # Load data
-@st.cache_data.clear()
+@st.cache_data
 def load_data():
     return pd.read_csv("data/asreview_papers.csv")
 
