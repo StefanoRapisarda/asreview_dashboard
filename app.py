@@ -22,7 +22,7 @@ if st.checkbox("Show summary stats"):
 st.line_chart(df["Date"])  # replace with your actual column
 
 # Run analysis
-if st.button("Visualize Publications per Year"):
-    fig = visualize_publications_per_year(df)
+if st.button("Visualize Publications per Month"):
+    fig = visualize_publications_per_month(df)
     st.pyplot(fig)
 
