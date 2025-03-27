@@ -1,7 +1,7 @@
 # app.py
 import streamlit as st
 import pandas as pd
-from scripts.analyze import visualize_publications_per_year  # if you have analysis logic as functions
+from scripts.analyze import visualize_publications_per_month  # if you have analysis logic as functions
 
 # Title
 st.title("📊 My Data Dashboard")
