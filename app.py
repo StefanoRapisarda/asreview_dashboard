@@ -23,6 +23,6 @@ st.line_chart(df["Date"])  # replace with your actual column
 
 # Run analysis
 if st.button("Visualize Publications per Year"):
-    result = visualize_publications_per_year(df)
-    st.write("### Analysis Result", result)
+    fig = visualize_publications_per_year(df)
+    st.pyplot(fig)
 
