@@ -15,14 +15,10 @@ df = load_data()
 st.write("### Raw Data", df)
 
 # Add interaction
-if st.checkbox("Show summary stats"):
+if st.checkbox("Test button"):
     st.write(df.describe())
+ # replace with your actual column
 
-# Visuals (example)
-st.line_chart(df["Date"])  # replace with your actual column
-
-# Run analysis
-if st.button("Visualize Publications per Month"):
-    fig = visualize_publications_per_month(df)
-    st.pyplot(fig)
+fig = visualize_publications_per_month(df)
+st.pyplot(fig)
 
